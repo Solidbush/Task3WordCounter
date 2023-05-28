@@ -1,0 +1,18 @@
+﻿<Window x:Class="ClientApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <Button Click="ConnectClick" x:Name="bConnDiconn" Content="Connect" HorizontalAlignment="Left" Margin="312,10,0,0" VerticalAlignment="Top" Width="169" Height="43"/>
+        <Button Click="PathForRead" x:Name="bPathForRead" Content="Read Path" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="170" Height="43"/>
+        <Button Click="PathForWrite" x:Name="bPathForWrite" Content="Read Path" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Width="170" Height="43"/>
+        <TextBox x:Name="tbFilePathForRead" HorizontalAlignment="Left" Height="43" Margin="239,73,0,0" TextWrapping="Wrap" Text="Путь файла для чтения:" VerticalAlignment="Top" Width="545" RenderTransformOrigin="0.468,0.504"/>
+        <TextBox x:Name="tbFilePathForWrite" HorizontalAlignment="Left" Height="43" Margin="239,144,0,0" TextWrapping="Wrap" Text="Путь файла для записи:" VerticalAlignment="Top" Width="545"/>
+        <ListBox x:Name="tbMessageLog" HorizontalAlignment="Left" Height="201" Margin="10,209,0,0" VerticalAlignment="Top" Width="774"/>
+
+    </Grid>
+</Window>
